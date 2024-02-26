@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+*{
+  background-color: #8c888a;
+}
+
+input{
+  background-color: #eeecee;
+  border: none;
+  padding: 10px;
+  width: 240px;
+}
+
+.inputs{
+  background-color: white;
+  padding: 30px;
+}
+
+.register{
+  width: 260px;
+  background-color: green;
+  border-radius: 0px;
+}
