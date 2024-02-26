@@ -17,11 +17,14 @@ function App() {
     Phone : ""
   })
 
+  const [success, setSuccess] = useState(false)
+
   const handleChange = (e) => {
     const {name, value} = e.target;
     setFormData({ ...formData , [name] : value })
 
     setError({ ...error , [name] : ""})
+    setSuccess(false)
   }
 
   const handleSubmit = (e) => {
@@ -55,12 +58,16 @@ function App() {
       return
     }
 
+    setSuccess(true)
     console.log("success", formData)
   }
 
   return (
     <form onSubmit={handleSubmit}>
     <div className='inputs'>
+
+    {success && <p className="success">Registration Successful !</p>}
+
       <input 
       type="text" 
       name="firstName"

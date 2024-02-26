@@ -26,3 +26,10 @@ input{
   background-color: green;
   border-radius: 0px;
 }
+
+.success{
+  color:black;
+  text-align: center;
+  background-color: rgb(50, 50, 255);
+  padding: 10px;
+}
